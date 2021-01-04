@@ -8,6 +8,6 @@ public class SquarePtest {
   @Test
   public void methodSquare(){
     SquareP P1 = new SquareP(5);
-    Assert.assertEquals(P1.perimeter(), 30);
+    Assert.assertEquals(P1.perimeter(), 25);
   }
 }
