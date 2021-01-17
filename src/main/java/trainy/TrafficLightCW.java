@@ -1,12 +1,12 @@
 package trainy;
 
-public class TrafficLight {
+public class TrafficLightCW {
   //public static void main(String[] args) {
     //System.out.println(updateLight("red"));
     //System.out.println(age(15));}
 
  static String color = "";
-  public TrafficLight (String s){
+  public TrafficLightCW(String s){
     color = s;
   }
 

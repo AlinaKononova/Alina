@@ -2,32 +2,32 @@ package FirstPackage;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import trainy.TrafficLight;
+import trainy.TrafficLightCW;
 
 public class TrafficLightTest {
 
   @Test
   public void testYellow() {
-    TrafficLight c = new TrafficLight("green");
+    TrafficLightCW c = new TrafficLightCW("green");
     Assert.assertEquals(c.updateLight(),"yellow");
   }
 
   @Test
   public void testRed() {
-    TrafficLight c = new TrafficLight("yellow");
+    TrafficLightCW c = new TrafficLightCW("yellow");
     Assert.assertEquals(c.updateLight(),"red");
   }
 
   @Test
   public void testGreen() {
-    TrafficLight c = new TrafficLight("red");
+    TrafficLightCW c = new TrafficLightCW("red");
     Assert.assertEquals(c.updateLight(),"green");
   }
 
 
   @Test
   public void testError() {
-    TrafficLight c = new TrafficLight("dog");
+    TrafficLightCW c = new TrafficLightCW("dog");
     Assert.assertEquals(c.updateLight(),"Error");
   }
 
